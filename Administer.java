@@ -329,9 +329,9 @@ public class Administer {
             System.out.println("1. Thêm thông tin trong khu nghĩ dưỡng");
             System.out.println("2. Hiển thị danh sách trong khu nghĩ dưỡng");
             System.out.println("3. Các thủ tục khi trả phòng ");
-            System.out.println("3. Hiển thị các loại tổng số");
-            System.out.println("4. Tổng số tiền có được từ đặt phòng:");
-            System.out.println("5. Thoát");
+            System.out.println("4. Hiển thị các loại tổng số");
+            System.out.println("5. Tổng số tiền có được từ đặt phòng:");
+            System.out.println("6. Thoát");
             int choice =Input.inputInt("Nhập lựa chọn: ");
             menu(choice);
         }
