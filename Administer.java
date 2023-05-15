@@ -328,7 +328,7 @@ public class Administer {
         {
             System.out.println("1. Thêm thông tin trong khu nghĩ dưỡng");
             System.out.println("2. Hiển thị danh sách trong khu nghĩ dưỡng");
-            //System.out.println("3. Các thủ tục khi trả phòng ");
+            System.out.println("3. Các thủ tục khi trả phòng ");
             System.out.println("3. Hiển thị các loại tổng số");
             System.out.println("4. Tổng số tiền có được từ đặt phòng:");
             System.out.println("5. Thoát");
@@ -423,20 +423,20 @@ public class Administer {
                     showChi();
                 }
                 break;
-//            case 3 :
-//                subMenu(choice);
-//                choice1=Input.inputInt("Nhập lựa chọn: ");
-//                if(choice1==1)
-//                {
-//                    int id=Input.inputInt("Nhap ma khach hang ban muon xoa");
-//                    xoaKhachHang(id);
-//                }
-////                else if(choice1==2)
-////                {
-////                    //cập nhật/xóa đặt phòng
-////                }
-//                break;  
             case 3 :
+                subMenu(choice);
+                choice1=Input.inputInt("Nhập lựa chọn: ");
+                if(choice1==1)
+                {
+                    int id=Input.inputInt("Nhap ma khach hang ban muon xoa");
+                    xoaKhachHang(id);
+                }
+//                else if(choice1==2)
+//                {
+//                    //cập nhật/xóa đặt phòng
+//                }
+                break;  
+            case 4 :
                 subMenu(choice);
                 choice1=Input.inputInt("Nhập lựa chọn: ");
                 if(choice1==1)
@@ -460,7 +460,7 @@ public class Administer {
                     System.out.println("Tổng số giấy phép: "+listGiayPhep.size());
                 }
                 break;
-            case 4 :
+            case 5 :
                 System.out.println("Tổng số tiền có được từ đặt phòng: "+tongsoTienThuDatPhong());
                 
 //                if(choice1==3)
@@ -480,9 +480,9 @@ public class Administer {
 //                    System.out.println("Tổng số doanh thu: "+ ( tongThu() - tongChi() ));
 //                }
 //                break;
-//            case 6 :
-//                System.exit(0);
-//                break;
+            case 6 :
+                System.exit(0);
+                break;
         }
 
    }
